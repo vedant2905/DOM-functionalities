@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAT</title>
+    <style>
+     
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html,body{
+            height: 100vh;
+            width: 100vw;
+    
+        }
+        .main-cont{
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .img1{
+            width: 130px;
+
+        }
+        .img2{
+            width: 200px;
+
+        }
+        .btn-cont{
+            width: 180px;
+            height: 120px;
+            background-color: darkcyan;
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+        .heading{
+            align-items: center;
+            color: bisque;
+            padding-left: 25px;
+        }
+
+        .btn-box{
+            display:flex ;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .btn-1{
+            width: 50px;
+            height: 40px;
+
+        }
+
+        .btn-2{
+            width: 50px;
+            height: 40px;
+            margin-left: 10px;
+         
+
+        }
+    
+    
+    
+    
+    </style>
+
+</head>
+<body>
+    
+    <div class="main-cont">
+        <img id="Bulb" class="img1" alt="" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-on-img.png">
+        <img id="cat" class="img2" alt="" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/cat-img.png">
+
+        <br>
+        <br>
+  
+        <div class="btn-cont">
+            <h4 id="switch" class="heading">Switched OFF</h4>
+            <br>
+        
+
+        <div class="btn-box">
+            <button id="btnOff" class="btn-1" onclick="onHideCat()">Off</button>
+            <button id="btnOn" class="btn-2" onclick="onVisibleCat()">On</button>
+        </div>
+        </div>
+        <script src="CAT light.js"></script>
+    </div>
+
+    
+
+
+</body>
+</html>
